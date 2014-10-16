@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Urban Airship — Push Composer</title>
+        
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Push messages to you users." />
+		<meta name="keywords" content="Urban Airship, Push Notifications, etc" />
+
+		<script src="js/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+        
+	</head>
+    
+	<body>
+        <div id="header">
+            <img src="images/logo.png" id="logo">
+            <img src="images/navigation_placeholder.png" id="header_nav">
+        </div>
+        
+        <div id="content">
+            <div id="sidebar">
+                <img src="images/sidebar_placeholder.png">
+            </div>
+            
+            <div id="main-content">
+                <h1>New Notification</h1>
+                
+                <!-- MESSAGE INPUT -->
+               <section class="text-input">
+                    <h2 class="alignleft">1. Compose Message</h2>
+                   <p class="alignright">126 Characters left.</p>
+                   <textarea placeholder="Type your message here" id="main-input" rows="5"></textarea>
+               </section>
+               
+               <!-- IMAGE UPLOAD -->
+               <section class="image-upload">
+                    <h2 class="alignleft">2. Upload an Image</h2>
+                   <div style="clear: both;"></div>
+                   <textarea placeholder="Browse for an image to upload (JPG, PNG or GIF)" id="image-upload" rows="1"></textarea>
+                   <button id="image-upload-btn">BROWSE</button>
+               </section>
+               
+               <!-- CHOOSE PLATFORM -->
+                <section class="choose-platform">
+                    <h2>3. Choose Platform</h2>
+                   <!-- Check Boxes -->
+                   <!-- iOS -->
+                    <div class="check_container" title="iOS">
+                        <!-- .checkBox -->
+                        <div class="checkBox">
+                          <input type="checkbox" value="None" id="checkBox" name="check" checked />
+                          <label for="checkBox"></label>
+                        </div>
+                         <!-- end .checkBox -->
+                        <div class="title">
+                           <h1>iOS</h1>
+                        </div>
+                     </div>
+                     
+                     <!-- Android -->
+                     <div class="check_container" title="Android">
+                        <!-- .checkBox -->
+                        <div class="checkBox2">
+                          <input type="checkbox" value="None" id="checkBox2" name="check" checked />
+                          <label for="checkBox2"></label>
+                        </div>
+                         <!-- end .checkBox -->
+                        <div class="title">
+                           <h1>ANDROID</h1>
+                        </div>
+                     </div>
+                     
+                     <!-- Windows -->
+                     <div class="check_container" title="Windows">
+                        <!-- .checkBox -->
+                        <div class="checkBox3">
+                          <input type="checkbox" value="None" id="checkBox3" name="check" checked />
+                          <label for="checkBox3"></label>
+                        </div>
+                         <!-- end .checkBox -->
+                        <div class="title">
+                           <h1>WINDOWS</h1>
+                        </div>
+                     </div>
+                     
+                     <!-- Blackberry -->
+                     <div class="check_container" title="Blackberry">
+                        <!-- .checkBox -->
+                        <div class="checkBox4">
+                          <input type="checkbox" value="None" id="checkBox4" name="check" checked />
+                          <label for="checkBox4"></label>
+                        </div>
+                         <!-- end .checkBox -->
+                        <div class="title">
+                           <h1>BLACKBERRY</h1>
+                        </div>
+                     </div>
+                     <div style="clear: both;"></div>
+               </section>
+               
+               <!-- Delivery -->
+               <section class="image-upload">
+                    <h2>4. Delivery</h2>
+                     <div style="clear: both;"></div>
+                   <div class="button_container">
+                       <a href="#collapse1" class="nav-toggle"><div class="delivery_button" id="schedule"><img src="images/icon_clock.png"><h1>SCHEDULE</h1></div></a>
+                       <div class="delivery_button" id="save_draft"><img src="images/icon_save.png"><h1>SAVE DRAFT</h1></div>
+                       <div class="delivery_button" id="send_now"><img src="images/icon_send.png"><h1>SEND NOW</h1></div>
+                   </div>
+                    <div style="clear: both;"></div>
+                    
+                        <div id="collapse1" style="display:none">
+                            <textarea placeholder="Date" id="date_input" class="schedule_input btn" rows="1"></textarea>
+                            <textarea placeholder="Time" id="time_input" class="schedule_input" rows="1"></textarea>
+                        </div>
+                        
+                   
+    
+               </section>
+               
+    
+               
+            </div><!-- End Main Content -->
+            
+            <div class="clear"></div>
+        </div>
+
+	</body>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.nav-toggle').click(function(){
+					//get collapse content selector
+					var collapse_content_selector = $(this).attr('href');					
+					
+					//make the collapse content to be shown or hide
+					var toggle_switch = $(this);
+					$(collapse_content_selector).toggle(function(){
+						
+					});
+				});
+				
+			});	
+		</script>
+</html>

@@ -1,0 +1,268 @@
+@charset 'UTF-8';
+
+
+
+	body { background: url(../images/white_wave.png);}
+	
+	h1 { font-family: 'museo_sans_for_dell100'; color: #005273; font-size: 36px; }
+	h2 { font-family: 'museo_sans_for_dell700'; color: #005273; font-size: 16px; }
+	p  { font-family: 'museo_sans_for_dell100'; color: #222222; font-size: 16px; }	
+
+
+/* Gerneral Styles */ 
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.clear { clear: both; }
+
+
+/* Header Styles */
+
+#header {
+	background: url(../images/header_blue.png) repeat-x;
+	height: 80px;
+	width: 100%;
+}
+
+#logo { margin: 28px 0px 0px 24px; }
+#header_nav { float: right; margin: 0px 10px 0px 0px;}
+
+
+/* Sidebar Styles */
+#sidebar {
+	background: #ffffff;
+	border-right: solid 1px #e3e3e3;
+	width: 310px;
+	height: 1110px;
+	float: left;
+}
+
+	
+/* MAIN CONTENT STYLES */ 
+
+#main-content {
+	padding: 80px 0px 0px 80px;
+	max-width: 800px;
+	float: left;
+	}
+
+#main-content section { 
+	margin: 60px 0px 0px 0px; 
+	padding: 0px 0px 60px 0px; 
+	width: 800px; 
+	border-bottom: 1px solid #cacaca; 
+}
+
+.text-input p { 
+	float: right; 
+	position: relative;
+	top: 0px;
+	right: 0px;
+}
+
+#main-input {
+	width: 760px;
+	height: 144px;
+	resize: none;
+	margin: 20px 0px 0px 0px;
+	border: 1px solid #cacaca;
+	padding: 20px;
+	font-family: 'museo_sans_for_dell100'; color: #222222; font-size: 16px;
+	outline: none;
+}
+
+#image-upload {
+	width: 419px;
+	height: 18px;
+	resize: none;
+	margin: 20px 0px 0px 0px;
+	border: 1px solid #cacaca;
+	padding: 20px;
+	font-family: 'museo_sans_for_dell100'; color: #222222; font-size: 16px;
+	outline: none;
+}
+
+#image-upload-btn {
+	position: relative;
+	background: #51c4cc;
+	width: 139px;
+	height: 60px;
+	margin: 0px 0px 0px -5px;
+	padding: 0px;
+	top: -24px;
+	font-family: 'museo_sans_for_dell100'; color: white; font-size: 18px;
+	transition: background-color 0.25s ease,
+				 width 0.25s ease;
+	outline: none;
+}
+
+#image-upload-btn:hover {
+	background: #005273;
+	width: 150px;
+	cursor: pointer;
+}
+
+
+/* Check Boxes */ 
+
+.checkBox, .checkBox2, .checkBox3, .checkBox4 {
+  position: relative;
+  margin: 20px 0px 0px 0px;
+}
+.checkBox label, .checkBox2 label, .checkBox3 label, .checkBox4 label {
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #cacaca;
+}
+.checkBox label:after, .checkBox2 label:after, .checkBox3 label:after, .checkBox4 label:after {
+  content: '';
+  width: 24px;
+  height: 10px;
+  position: absolute;
+  top: 14px;
+  left: 11px;
+  border: 9px solid #51c4cc;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.checkBox label:hover::after, .checkBox2 label:hover::after, .checkBox3 label:hover::after, .checkBox4 label:hover::after {
+  opacity: 0.3;
+}
+.checkBox input[type=checkbox], .checkBox2 input[type=checkbox], .checkBox3 input[type=checkbox], .checkBox4 input[type=checkbox] {
+  visibility: hidden;
+}
+.checkBox input[type=checkbox]:checked + label:after, .checkBox2 input[type=checkbox]:checked + label:after, .checkBox3 input[type=checkbox]:checked + label:after, .checkBox4 input[type=checkbox]:checked + label:after {
+  opacity: 1;}
+
+/* end .checkBox */
+
+.check_container {
+	float: left;
+	margin: 0px 40px 0px 0px;
+}
+
+.title h1 { 
+	margin: 0px 0px 0px 70px;
+	font-size: 21px;
+}
+
+/* Delivery Buttons */
+
+.button_container { margin: 20px 0px 60px 0px; }
+
+.delivery_button {
+	width: 155px;
+	height: 46px;
+	float: left;
+	margin: 0px 30px 0px 0px;
+	padding: 9px 0px 0px 7px;
+	transition: opacity 0.25s ease,
+				 width 0.25s ease
+}
+
+.delivery_button:hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.delivery_button h1 {
+	font-size: 18px;
+	color: #FFFFFF;
+	margin: 10px 0px 0px 0px;
+}
+
+.delivery_button img {
+	float: left;
+	padding: 0px 5px 0px 0px;
+}
+
+#schedule {
+	background: #005273;
+}
+
+#save_draft {
+	background: #97233f;
+}
+
+#send_now {
+	background: #51c4cc;
+}
+
+/* Schedule Drop Down */
+
+.schedule_input {
+	width: 198px;
+	height: 18px;
+	resize: none;
+	margin: 40px 30px 0px 0px;
+	border: 1px solid #cacaca;
+	padding: 20px;
+	font-family: 'museo_sans_for_dell100'; color: #222222; font-size: 16px;
+	outline: none;
+}
+
+#date_input {
+	background: #FFFFFF url(../images/icon_schedule.png) no-repeat right;
+}
+
+#time_input {
+	background: #FFFFFF url(../images/icon_time.png) no-repeat right;
+}
+
+
+
+
+/* @Font-Face font embeds */ 
+
+@font-face {
+    font-family: 'museo_sans_for_dell100';
+    src: url('fonts/museo-sans-100-webfont.eot');
+    src: url('fonts/museo-sans-100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museo-sans-100-webfont.woff2') format('woff2'),
+         url('fonts/museo-sans-100-webfont.woff') format('woff'),
+         url('fonts/museo-sans-100-webfont.ttf') format('truetype'),
+         url('fonts/museo-sans-100-webfont.svg#museo_sans_for_dell100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'museo_sans_for_dell700';
+    src: url('fonts/museo-sans-700-webfont.eot');
+    src: url('fonts/museo-sans-700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museo-sans-700-webfont.woff2') format('woff2'),
+         url('fonts/museo-sans-700-webfont.woff') format('woff'),
+         url('fonts/museo-sans-700-webfont.ttf') format('truetype'),
+         url('fonts/museo-sans-700-webfont.svg#museo_sans_for_dell700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo_sans_for_dell300';
+    src: url('museo-sans-300-webfont.eot');
+    src: url('museo-sans-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('museo-sans-300-webfont.woff2') format('woff2'),
+         url('museo-sans-300-webfont.woff') format('woff'),
+         url('museo-sans-300-webfont.ttf') format('truetype'),
+         url('museo-sans-300-webfont.svg#museo_sans_for_dell300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
