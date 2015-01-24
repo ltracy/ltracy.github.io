@@ -1,0 +1,234 @@
+body {
+	font-family: 'Muli', sans-serif; 
+	background: white;
+}
+
+.jumbotron {
+	color: white;
+}
+.hero {
+	text-transform: uppercase;
+	color:white;
+	letter-spacing: .6em;
+}
+.newbadge {
+	background: rgba(34, 46, 60, 0.95);
+	display:block;
+	position: absolute;
+	text-align: center;
+	height: 20%;
+	margin-top:15em;
+	margin-left: 21em;
+	margin-right: 4em;
+	padding:2.3em 2em;
+	border: solid 1px rgba(255, 255, 255, 0.2);
+
+}
+.hero h1 {
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+  font-size: 2.5vw;
+  line-height: 45px;
+  margin: 0;
+}
+.hero h2 {
+  font-weight: normal;
+  font-size: 1em;
+  margin: 0;
+}
+@media only screen and (max-width:62.5em) {
+    .newbadge {
+    	background: rgba(34, 46, 60, 0.95);
+			display:block;
+			position: absolute;
+			text-align: center;
+			vertical-align: middle;
+			height: 20%;
+		/*	width: 80%;
+		*/margin-top:3em;
+			margin-left: 4em;
+			margin-right: 4em;
+			padding:.9em 2em;
+			border: solid 1px rgba(255, 255, 255, 0.2);}
+
+    .hero h1 {
+	    padding-left: 1.5vw;
+	    font-size: 6vw;
+	    line-height: 7vw;
+		}
+		.hero h2 {
+		    top: 0vw;
+		    padding-left: 3vw;
+		    font-size: 2vw;
+		    line-height: 6vw;
+		    letter-spacing: .4em;
+		}
+}
+
+.hero #living {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: solid 1em rgba(0, 0, 0, 0.7);
+}
+.hero #living .inner {
+    padding-top: 55.40%; /* height/width of image */
+    display: block;
+    height: 0;
+}
+/* default screen, non-retina */
+.hero #living { background-image: url("images/jumbo_bg.jpg"); }
+
+@media only screen and (max-width: 320px) {
+    /* Small screen, non-retina */
+    .hero #living { background-image: url("images/jumbo_bg.jpg"); }
+}
+@media
+only screen and (min-resolution: 2dppx) and (max-width: 320px) {
+    /* Small screen, retina */
+    .hero #living { background-image: url("images/jumbo_bg.jpg"); }
+}
+@media only screen and (min-width: 321px) and (max-width: 538px) {
+    /* Medium screen, non-retina */
+    .hero #living { background-image: url("images/jumbo_bg.jpg"); }
+}
+@media
+only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 538px) {
+    /* Medium screen, retina */
+    .hero #living { background-image: url("images/jumbo_bg.jpg"); }
+}
+@media
+only screen and (min-resolution: 2dppx) and (min-width: 539px) {
+    /* Large screen, retina */
+    .hero #living { background-image: url("images/jumbo_bg.jpg"); }
+}
+
+
+.badge {
+	background: url('images/badge_bg.png') no-repeat top right;
+	background-color: #222e3c; 
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	padding:2em 3em;
+}
+.badge h1 {
+	font-family: 'EB Garamond', serif;
+	font-size: 1.5em;
+	letter-spacing: .2em;
+}
+.badge h2 {
+	font-family: 'Muli', sans-serif; 
+	font-size: .75em;
+	letter-spacing: .2em;
+}
+.small-stroke-white {
+	width:50px;
+	height:1px;
+	background: rgba(255, 255, 255, 0.2);
+	display: block;
+	margin:1em auto;
+	text-align: center;
+}
+.small-stroke-gray {
+	width:50px;
+	height:1px;
+	background: rgba(0, 0, 0, 0.2);
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;
+	text-align: center;
+}
+.pod {
+	border-right:1px solid #ededed;
+	text-align: center;
+	padding: 3em 0 2em 0;
+}
+.number {
+	line-height: 110px;
+}
+.pod h3 {
+	font-family: 'Muli', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.pod-right {
+	text-align: center;
+	padding: 3em 0 2em 0;
+}
+.pod-right h3 {
+	font-family: 'Muli', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.contact {
+	background: url('images/contact_bg.png') repeat top right;
+	border-bottom:1px solid #ededed;
+	border-top:1px solid #ededed;
+	
+	text-align: center;
+	padding:5em 0;
+}
+
+.btn-contact {
+	background-color: white;
+	border-radius:0;
+	border:1px solid #c3c3c3;
+	color: #222e40;
+	font-size: 1.4em;
+	letter-spacing: .2em;
+	padding:1em 4em;
+	-webkit-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow:    3px 3px 0px 0px rgba(50, 50, 50, 0.4);
+	box-shadow:         3px 3px 0px 0px rgba(50, 50, 50, 0.4);
+}
+.btn-contact a:active {
+	color: #222e40;
+}
+.btn-contact a:hover {
+	color: #222e40;
+}
+.btn-contact a:visited {
+	color: #222e40;
+}
+.bios {
+	padding: 3em 1em;
+}
+.bios h4 {
+	font-family: 'EB Garamond', serif;
+	text-transform: uppercase;
+}
+.bios p {
+	font-family: 'Muli', sans-serif;
+}
+.small-stroke-gray-bios {
+	width:50px;
+	height:1px;
+	background: rgba(0, 0, 0, 0.2);
+  margin: 1em 0;
+}
+.pics {
+	text-align: center;	
+}
+.footer {
+	background-color: #222e3c;
+	border: solid .5em rgba(0, 0, 0, 0.2);
+	color: white;
+	letter-spacing: .2em;
+	padding:2em 0;
+	text-align: center;
+}
+.email {
+	font-family: 'EB Garamond', serif;
+}
